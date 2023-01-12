@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>        
+        table {
+            -webkit-box-shadow: 13px 10px 5px -7px rgba(0,0,0,0.22);
+            -moz-box-shadow: 13px 10px 5px -7px rgba(0,0,0,0.22);
+             box-shadow: 13px 10px 5px -7px rgba(0,0,0,0.22);
+        }
+        table thead th {
+            background-color: lightblue;
+            cursor: pointer;
+        }
+        table tfoot td {
+            background-color: lightgray;
+            cursor: pointer;
+        }
+        table tbody tr:nth-child(even) {
+            background-color: cornflowerblue;            
+        }
+        table tbody tr:hover {
+            background-color: rgb(132, 151, 189);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <table width="450" align="center" cellpadding="5" cellspacing="0">
+        <caption>Table de idades</caption> <!--descrição da tabela em forma de título-->
+        <!--Ajuda na hora de renderizar; independe da posição-->
+        <thead>
+            <tr>
+                <th title="Nome completo">Nome</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Guilherme</td>
+                <td>28</td>
+            </tr>
+            <tr>
+                <td>Karol</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>34</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>6</td>
+            </tr>
+            
+        </tfoot>
+    </table>
+</body>
+</html>
