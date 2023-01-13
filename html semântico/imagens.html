@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+</head>
+<body>
+    <!--
+    Figure é um conteiner
+    Delimita o escopo de uma imagem
+    -->
+    <figure>
+        <!--
+            Por causa da figure, o mecanismo de busca sabe que o caption está relacionado à imagem
+        -->
+        <img src="" alt="">
+        <figcaption></figcaption>
+    </figure>
+    <!--
+        O picture aceita multiplas fontes para uma mesma imagem pelo srcset
+        Permite otimizar a imagem de acordo com a tela do usuário através do media
+    -->
+    <picture>
+        <source srcset="" media="(min-width> 600px">
+        <img src="" alt="">
+    </picture>
+</body>
+</html>

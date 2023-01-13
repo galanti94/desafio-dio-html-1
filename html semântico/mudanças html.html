@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags HTML5 - Estrutural</title>
+    <style>
+        nav ul {
+            list-style: none;
+        }
+        nav ul li a {
+            padding: 10px 15px;
+            text-decoration: none;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        A abordagem do HTML5 é de estruturação, e não formatação
+        Essa é a grande diferença entre  HTML4 e HTML5
+    -->
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="">Home</a>
+                    <a href="">Sobre</a>
+                    <a href="">Contato</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    
+    <!--
+        Só pode ter uma main
+        Ela não pode ser filha
+        Outas tags estruturais podem estar no main
+    -->
+    <main>
+        <article>
+            <h1>Título do artigo</h1>
+            <p>Parágrafo do artigo</p>
+            <p><q>Essa é uma citação em linha!</q></p>
+            <!--cite não traz alteração no texto, mas ajuda no SEO-->
+            <blockquote cite="">
+                <p>Citação no artigo</p>
+            </blockquote>
+        </article>
+
+        <!--
+            Assunto que não tem a ver com o assunto principal da página
+            É uma section menos importante que as demais
+            Não pode colocar texto entre parênteses (?)
+        -->
+        <aside></aside>
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>
