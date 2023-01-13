@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br
+">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos especiais</title>
+    <style>
+        kbd {
+            padding: 3px;
+            border: solid 1px black;
+            border-radius: 10px;
+        }
+        code {
+            background-color: antiquewhite;
+        }
+        pre {
+            background-color: aliceblue;
+        }
+        details {
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+
+    <!--
+        O datalist armazena algumas sugestões para o usuário em campos como o de busca
+    -->
+    <input list="browsers" type="search" name="search /">
+    <datalist id="browsers">
+        <option value="">Selecione um navegador</option>
+        <option value="">Chrome</option>
+        <option value="">Edge</option>
+        <option value="">Firefox</option>
+        <option value="">Safari</option>
+    </datalist>
+
+    <hr>
+
+    <!--
+        O select cria uma caixa onde as opções ficarão disponíveis para o usuário
+    -->
+    <select  name="Browsers">
+        <option value="">Selecione um navegador</option>
+        <option value="">Chrome</option>
+        <option value="">Edge</option>
+        <option value="">Firefox</option>
+        <option value="">Safari</option>
+    </select>
+
+    <hr>
+    
+    <!--
+        O kbd serve para trazer a font padrão para keyboard
+        Fica mais fácil formatar com CSS 
+    -->
+    <p>Aperte <kbd>CTRL</kbd> + <kbd>C</kbd> para copiar</p>
+
+
+    <p>Esse é um código HML5: <code>background-color</code> </p>
+
+     <!--
+        O pre apresenta uma amostra de código sem usá-lo no HTML
+        Fonte monospace são fontes onde todas as letas ocupam o mesmo espaço
+    -->
+    <pre>
+        kbd {
+            padding: 3px;
+            border: solid 1px black;
+            border-radius: 10px;
+        }
+    </pre>
+
+    <hr>
+
+    <!--
+        A tag details cria um sistema de expansão de informação
+        Antigamente precisava de javascript para fazer essa função
+        O summary fica ao lado do botão de expansão
+    -->
+    <details>
+        <summary>Como trocar de carro</summary>
+        <p>É só pagar e levar</p>
+    </details>
+    
+    <hr>
+
+    <!--
+        O progress marca a progressão de algo
+        O meter é um medidor
+    -->
+    <meter></meter>
+    <progress max="100" min="0" value="0" id="progress"></progress>
+
+    <script>
+        var progress = document.getElementById('progress');
+        <!-- O 1000 é o tempo em ms -->
+        const interval = setInterval(() => {            
+            if (progress.value >= 100) {
+                progress.value = 0;
+            } else {
+                progress.value += 10;
+            }
+        }, 1000);         
+    </script>
+
+    <hr>
+
+    <!--
+        O canvas é um espaço para criar gráficos através de javascript
+    -->
+    
+
+    
+</body>
+</html>
